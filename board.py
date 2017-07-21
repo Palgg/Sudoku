@@ -3,7 +3,7 @@
 # imports
 
 """
-file responsible for generating a board
+	file responsible for generating a board
 """
 
 # blank board template
@@ -19,9 +19,18 @@ board_template = [['--', '--', '--', '==', '--', '--', '--', '==', '--', '--', '
 				  ['--', '--', '--', '==', '--', '--', '--', '==', '--', '--', '--'],
 				  ['--', '--', '--', '==', '--', '--', '--', '==', '--', '--', '--']]
 
+# class for board object
+class Board:
+	# constructor, initialize with empty seed and board
+	def __init__(self):
+		self.seed =[['-', '-', '-'],
+					['-', '-', '-'],
+					['-', '-', '-']]
+		self.board = board_template
+
 # generate and return a new board
-def new_board():
-	return board_template
+def gen_board():
+	return Board()
 
 # print a given board
 def print_board(board):

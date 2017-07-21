@@ -4,6 +4,10 @@
 from util import *
 from  board import *
 
+"""
+	entry point for the game
+"""
+
 # globals
 new_load_valid = ['new', 'load']
 	
@@ -24,8 +28,8 @@ if __name__ == "__main__":
 		print('Generating new board...')
 		print('--------------------------------\n')
 		# create the new board and display
-		testboard = new_board()
-		print_board(testboard)
+		testboard = gen_board()
+		print_board(testboard.board)
 	else:
 		print('Locating saved boards...\n')
 	
